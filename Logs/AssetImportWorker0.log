@@ -4429,3 +4429,60 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:scripting/precompiled-assembly-types:Assembly-CSharp: 30d203094b64c221a303fdcb215feeb6 -> 293b11bfe61f54458197de6245bc0e1f
+========================================================================
+Received Import Request.
+  Time since last request: 4372.561069 seconds.
+  path: Assets/Color/Black.mat
+  artifactKey: Guid(dfeb1c491d1eea5f9acf88825c8dbfef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Color/Black.mat using Guid(dfeb1c491d1eea5f9acf88825c8dbfef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'e53111903db4eac2a6deef4faa802c1a') in 0.064314 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 2.401955 seconds.
+  path: Assets/Darth_Artisan
+  artifactKey: Guid(1dda5fe30fd2a42bba9d51692a095c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Darth_Artisan using Guid(1dda5fe30fd2a42bba9d51692a095c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3d20963dadce988a5c0e3d5405a3bf90') in 0.000499 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.709637 seconds.
+  path: Assets/Darth_Artisan/Free_Trees
+  artifactKey: Guid(b7aee0f11d1aa466daa952466d59cae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Darth_Artisan/Free_Trees using Guid(b7aee0f11d1aa466daa952466d59cae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '32f77be0faaf83b0b31aa8ad173e7cc9') in 0.000371 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 17.030123 seconds.
+  path: Assets/Free_Trees/Prefabs
+  artifactKey: Guid(2365d38fec1724d4199604c670e1f4a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free_Trees/Prefabs using Guid(2365d38fec1724d4199604c670e1f4a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '408809675ab2f9975239c9667fc32d4d') in 0.000396 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.050423 seconds.
+  path: Assets/Free_Trees/Prefabs/Fir_Tree.prefab
+  artifactKey: Guid(19682540d8a014522a319b1cf788aee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free_Trees/Prefabs/Fir_Tree.prefab using Guid(19682540d8a014522a319b1cf788aee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '4b07b0fba62df86eb0743a8d4f41febf') in 0.018088 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Free_Trees/Prefabs/Poplar_Tree.prefab
+  artifactKey: Guid(826b6a0b570e8460990010fa615b5a2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free_Trees/Prefabs/Poplar_Tree.prefab using Guid(826b6a0b570e8460990010fa615b5a2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f69bcf903152b7befd7c76e9240f2be4') in 0.004634 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9

@@ -4402,3 +4402,33 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:scripting/precompiled-assembly-types:Assembly-CSharp: 30d203094b64c221a303fdcb215feeb6 -> 293b11bfe61f54458197de6245bc0e1f
+========================================================================
+Received Import Request.
+  Time since last request: 6654.488280 seconds.
+  path: Assets/Color/Tree Color.mat
+  artifactKey: Guid(c6422c7d4428ec1fcacd115e2bcf6f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Color/Tree Color.mat using Guid(c6422c7d4428ec1fcacd115e2bcf6f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6d8598ce974828f662a0ce88cebe806a') in 0.064087 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 20.194901 seconds.
+  path: Assets/Free_Trees/Prefabs/Oak_Tree.prefab
+  artifactKey: Guid(c44bd9bdc114d4a60932c0087d9d1732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free_Trees/Prefabs/Oak_Tree.prefab using Guid(c44bd9bdc114d4a60932c0087d9d1732) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'e9e15794514dcc1ad390555838aa07c5') in 0.017811 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Free_Trees/Prefabs/Palm_Tree.prefab
+  artifactKey: Guid(c6b7fb383a3534b039692b5485b6e739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free_Trees/Prefabs/Palm_Tree.prefab using Guid(c6b7fb383a3534b039692b5485b6e739) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f0dae178a513733f2c2569c659d068d0') in 0.004207 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
