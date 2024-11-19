@@ -7,6 +7,7 @@ public class DroneLogic : MonoBehaviour
     public float speed = 10.0f;
     public float plantTime = 2.0f;
     public float droneRefreshRate = 240f;
+    public float randomness = 0.1f;
     public GameObject tree;
     private Rigidbody rb;
     private Bounce bounce;
@@ -30,7 +31,8 @@ public class DroneLogic : MonoBehaviour
     
     void plantTree()
     {
-        Instantiate(tree, new Vector3(transform.position.x,0,transform.position.z), Quaternion.identity);
+    Instantiate(tree, 
+        new Vector3(transform.position.x + Random.Range(-2f, 2f), 0, transform.position.z + Random.Range(-2f, 2f)), Quaternion.identity);
     }
     
     void UpdateDrone()

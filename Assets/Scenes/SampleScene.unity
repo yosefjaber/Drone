@@ -166,10 +166,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70c2c37e40670927e8203c401124ebd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1000
+  speed: 100
   plantTime: 0.001
+  droneRefreshRate: 240
   tree: {fileID: 560035295318790206, guid: c648bc50ee8957f5b90ce4a0eefba2b6, type: 3}
-  cooldownDuration: 0.1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
