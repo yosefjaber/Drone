@@ -320,6 +320,11 @@
 -r:"/home/jaber/Unity/Hub/Editor/2022.3.41f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlDocument.dll"
 -r:"/home/jaber/Unity/Hub/Editor/2022.3.41f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlSerializer.dll"
 -r:"/home/jaber/Unity/Hub/Editor/2022.3.41f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
+-r:"/home/jaber/Unity/Hub/Editor/2022.3.41f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Gradle.dll"
+-r:"/home/jaber/Unity/Hub/Editor/2022.3.41f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.GradleProject.dll"
+-r:"/home/jaber/Unity/Hub/Editor/2022.3.41f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll"
+-r:"/home/jaber/Unity/Hub/Editor/2022.3.41f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"
+-r:"/home/jaber/Unity/Hub/Editor/2022.3.41f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll"
 -r:"Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/2400b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
@@ -353,6 +358,7 @@
 "Assets/Scripts/Bounce.cs"
 "Assets/Scripts/DroneLogic.cs"
 "Assets/Scripts/Framecounter.cs"
+"Assets/Scripts/controller.cs"
 -langversion:9.0
 /deterministic
 /optimize+
