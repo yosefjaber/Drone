@@ -9,11 +9,14 @@ public class controller : MonoBehaviour
     public float speed = 10.0f;
     private Rigidbody rb;
     public Camera mainCamera;
+    private DroneLogic dl; 
 
     // Start is called before the first frame update
     void Start()
     {
         rb = drone.GetComponent<Rigidbody>();
+        dl = drone.GetComponent<DroneLogic>();
+        dl.InvokeRepeating("plantTree", 1f, 1f);
     }
 
     // Update is called once per frame
@@ -48,7 +51,7 @@ public class controller : MonoBehaviour
             direction -= new Vector3(0, 1, 0);
         }
         
-
+        
         if (direction != Vector3.zero)
         {
             rb.linearVelocity = direction.normalized * speed;
@@ -57,5 +60,7 @@ public class controller : MonoBehaviour
         {
             rb.linearVelocity = Vector3.zero;
         }
+        
+        
     }
 }

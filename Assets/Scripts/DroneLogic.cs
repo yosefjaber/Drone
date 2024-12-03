@@ -13,6 +13,9 @@ public class DroneLogic : MonoBehaviour
     private Bounce bounce;
     public bool manual = false;
     public controller Controller;
+    public int treesPlanted = 0;
+    public int treesGrow = 0;
+    public float chanceToGrow = 0.6f;
     // Start is called before the first frame update
 
 
@@ -41,7 +44,13 @@ public class DroneLogic : MonoBehaviour
     
     void plantTree()
     {
-        Instantiate(trees[Random.Range(0, 9)], new Vector3(transform.position.x + Random.Range(-randomness, randomness), 0, transform.position.z + Random.Range(-randomness, randomness)), Quaternion.identity);
+    treesPlanted++;
+        if(Random.Range(0f,1f) > chanceToGrow)
+        {
+            treesGrow++;
+            Instantiate(trees[Random.Range(0, 9)], new Vector3(transform.position.x + Random.Range(-randomness, randomness), 0, transform.position.z + Random.Range(-randomness, randomness)), Quaternion.identity);
+            Debug.Log(treesPlanted + " trees planted and " + treesGrow + " trees grew");
+        }
     }
     
     void UpdateDrone()
