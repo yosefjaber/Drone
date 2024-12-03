@@ -24,7 +24,7 @@ public class DroneLogic : MonoBehaviour
             float droneRefreshTime = 1 / droneRefreshRate;
             rb = this.GetComponent<Rigidbody>();
             bounce = new Bounce(this.gameObject);
-            rb.velocity = new Vector3(speed, 0, speed);
+            rb.linearVelocity = new Vector3(speed, 0, speed);
             InvokeRepeating("plantTree", 0, plantTime);
             InvokeRepeating("UpdateDrone", 0, droneRefreshTime);
         }

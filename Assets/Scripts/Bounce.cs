@@ -21,10 +21,10 @@ public class Bounce
     
     void changeDirection(int x, int z)
     {
-        Vector3 velocity = rb.velocity;
+        Vector3 velocity = rb.linearVelocity;
         velocity.x = x * velocity.x;
         velocity.z = z * velocity.z;
-        rb.velocity = velocity;
+        rb.linearVelocity = velocity;
     }
     
     public void bounce()
