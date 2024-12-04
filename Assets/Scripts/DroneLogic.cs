@@ -49,12 +49,15 @@ public class DroneLogic : MonoBehaviour
     
     void plantTree()
     {
-    treesPlanted++;
-        if(Random.Range(0f,1f) > chanceToGrow)
-        {
-            treesGrow++;
-            Instantiate(trees[Random.Range(0, 9)], new Vector3(transform.position.x + Random.Range(-randomness, randomness), 0, transform.position.z + Random.Range(-randomness, randomness)), Quaternion.identity);
-            //Debug.Log(treesPlanted + " trees planted and " + treesGrow + " trees grew");
+    if (gameMaker.gameOver == false)
+    {
+        treesPlanted++;
+            if(Random.Range(0f,1f) > chanceToGrow)
+            {
+                treesGrow++;
+                Instantiate(trees[Random.Range(0, 9)], new Vector3(transform.position.x + Random.Range(-randomness, randomness), 0, transform.position.z + Random.Range(-randomness, randomness)), Quaternion.identity);
+                //Debug.Log(treesPlanted + " trees planted and " + treesGrow + " trees grew");
+            }
         }
     }
 }
