@@ -55,6 +55,12 @@ public class GameMaker : MonoBehaviour
         
         // Update the sim number
         simNumber = Mathf.FloorToInt(timeElapsed / TimeOfSim) + 1;
+        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            // Quit the application
+            Application.Quit();
+        }
     }
 
     public void StartGame()
