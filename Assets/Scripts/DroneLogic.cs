@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DroneLogic : MonoBehaviour
 {
-    public float plantTime = 2.0f;
+    public float plantTime;
     public float droneRefreshRate = 240f;
     public float randomness = 0.1f;
     public GameObject[] trees;
@@ -13,19 +13,28 @@ public class DroneLogic : MonoBehaviour
     public controller Controller;
     public int treesPlanted = 0;
     public int treesGrow = 0;
-    public float chanceToGrow = 0.6f;
+    public float chanceToGrow;
+    public GameMaker gameMaker;
     // Start is called before the first frame update
 
 
     void Start()
     {
+        if (gameMaker == null)
+        {
+            Debug.LogError("GameMaker reference is not set in DroneLogic.");
+            return;
+        }
+        
+        plantTime = 1 / gameMaker.SeedsPerSecond; // Use the instance reference
+        chanceToGrow = 1 - gameMaker.SeedFailRate; // Use the instance reference
+        
         Controller = GetComponent<controller>();
         if (!manual)
         {
             float droneRefreshTime = 1 / droneRefreshRate;
             rb = this.GetComponent<Rigidbody>();
             InvokeRepeating("plantTree", 0, plantTime);
-            InvokeRepeating("UpdateDrone", 0, droneRefreshTime);
         }
         else 
         {

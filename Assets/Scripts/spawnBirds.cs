@@ -5,11 +5,13 @@ public class spawnBirds : MonoBehaviour
 
     public GameObject bird; 
     public float ChanceToSpawnEverySecond = 1;
+    public GameMaker gameMaker;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        InvokeRepeating("randomSpawnBird", 1f, 1f);
+        InvokeRepeating("randomSpawnBird", 1f, 1/gameMaker.BirdsPerSecond);
+        Debug.Log("BirdsPerSecond: " + gameMaker.BirdsPerSecond);
     }
 
     // Update is called once per frame
