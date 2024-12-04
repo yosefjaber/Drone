@@ -2,9 +2,7 @@ using UnityEngine;
 
 public class collisonLogic : MonoBehaviour
 {
-    public GameObject explosion;
-
-
+    public int birdsHit = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,8 +17,6 @@ public class collisonLogic : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        Instantiate(explosion, transform.position, transform.rotation);
-        Destroy(this.gameObject);
-        Debug.Log("Collison Detected");
+        birdsHit++;
     }
 }

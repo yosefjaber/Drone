@@ -20,13 +20,13 @@ public class spawnBirds : MonoBehaviour
     
     void spawnBirdLeft()
     {
-        GameObject Bird = Instantiate(bird, new Vector3(-85, 15, Random.Range(-45f,45f)), Quaternion.identity);
+        GameObject Bird = Instantiate(bird, new Vector3(-85, 15, Random.Range(-45f,45f)), Quaternion.Euler(0, 90, 0));
         Bird.GetComponent<Rigidbody>().linearVelocity = new Vector3(10, 0, 0);
     }
     
     void spawnBirdRight()
     {
-        GameObject Bird = Instantiate(bird, new Vector3(85, 15, Random.Range(-45f,45f)), Quaternion.identity);
+        GameObject Bird = Instantiate(bird, new Vector3(85, 15, Random.Range(-45f,45f)), Quaternion.Euler(0, -90, 0));
         Bird.GetComponent<Rigidbody>().linearVelocity = new Vector3(-10, 0, 0);
     }
     

@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class DroneLogic : MonoBehaviour
 {
-    public float speed = 10.0f;
     public float plantTime = 2.0f;
     public float droneRefreshRate = 240f;
     public float randomness = 0.1f;
     public GameObject[] trees;
     private Rigidbody rb;
-    private Bounce bounce;
     public bool manual = false;
     public controller Controller;
     public int treesPlanted = 0;
@@ -26,8 +24,6 @@ public class DroneLogic : MonoBehaviour
         {
             float droneRefreshTime = 1 / droneRefreshRate;
             rb = this.GetComponent<Rigidbody>();
-            bounce = new Bounce(this.gameObject);
-            rb.linearVelocity = new Vector3(speed, 0, speed);
             InvokeRepeating("plantTree", 0, plantTime);
             InvokeRepeating("UpdateDrone", 0, droneRefreshTime);
         }
@@ -49,13 +45,7 @@ public class DroneLogic : MonoBehaviour
         {
             treesGrow++;
             Instantiate(trees[Random.Range(0, 9)], new Vector3(transform.position.x + Random.Range(-randomness, randomness), 0, transform.position.z + Random.Range(-randomness, randomness)), Quaternion.identity);
-            Debug.Log(treesPlanted + " trees planted and " + treesGrow + " trees grew");
+            //Debug.Log(treesPlanted + " trees planted and " + treesGrow + " trees grew");
         }
     }
-    
-    void UpdateDrone()
-    {
-        bounce.bounce();
-    }
-
 }
