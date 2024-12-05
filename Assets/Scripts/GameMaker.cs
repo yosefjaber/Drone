@@ -18,6 +18,7 @@ public class GameMaker : MonoBehaviour
     public float TimeOfSim;
     public float StartingX;
     public float StartingZ;
+    public float SeedRandomness;
     public int NumberOfSims;
     public float BirdsPerSecond;
     public float DistanceBetweenTurns;
@@ -30,6 +31,7 @@ public class GameMaker : MonoBehaviour
     public Slider TimeOfSimSlider;
     public Slider StartingXSlider;
     public Slider StartingZSlider;
+    public Slider SeedRandomnessSlider;
     public Slider NumberOfSimsSlider;
     public Slider BirdsPerSecondSlider;
     public Slider DistanceBetweenTurnsSlider;
@@ -107,6 +109,7 @@ public class GameMaker : MonoBehaviour
         TimeOfSim = TimeOfSimSlider.value;
         StartingX = StartingXSlider.value;
         StartingZ = StartingZSlider.value;
+        SeedRandomness = SeedRandomnessSlider.value;
         NumberOfSims = Mathf.RoundToInt(NumberOfSimsSlider.value); // Convert to integer
         BirdsPerSecond = BirdsPerSecondSlider.value;
         DistanceBetweenTurns = DistanceBetweenTurnsSlider.value;

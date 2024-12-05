@@ -6,7 +6,7 @@ public class DroneLogic : MonoBehaviour
 {
     public float plantTime;
     public float droneRefreshRate = 240f;
-    public float randomness = 0.1f;
+    public float randomness;
     public GameObject[] trees;
     private Rigidbody rb;
     public bool manual = false;
@@ -20,6 +20,7 @@ public class DroneLogic : MonoBehaviour
 
     void Start()
     {
+        randomness = gameMaker.SeedRandomness;
         if (gameMaker == null)
         {
             Debug.LogError("GameMaker reference is not set in DroneLogic.");
